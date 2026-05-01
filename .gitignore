@@ -1,0 +1,27 @@
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Environment variables (NEVER commit your real API key!)
+.env
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# FAISS index files (if saved to disk)
+*.faiss
+*.pkl
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+
+# Uploaded PDFs (optional - remove if you want to track sample PDFs)
+*.pdf
