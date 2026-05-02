@@ -18,7 +18,11 @@ from langchain_community.vectorstores import FAISS
 # Load Gemini API key from .env file
 # ============================================================
 load_dotenv()
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+
+try:
+    GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
+except Exception:
+    GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 
 # ============================================================
